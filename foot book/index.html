@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Foot Book</h1>
+
+        <div class="content">
+
+            <form id="add-player">
+            <input type= "text" name="name" placeholder="The name Of Your Favorite Footballer">
+            <input type= "text" name="age" placeholder="Age..ehh...never mind">
+            <button>Add Your player here</button>
+            </form>
+            <ul id="cafe-list"></ul>
+
+        </div>
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7sJpaaH-gfRMD8HzU0q5S7QeeeecrI1k",
+    authDomain: "firestore-e63f3.firebaseapp.com",
+    databaseURL: "https://firestore-e63f3.firebaseio.com",
+    projectId: "firestore-e63f3",
+    storageBucket: "firestore-e63f3.appspot.com",
+    messagingSenderId: "1080205728446",
+    appId: "1:1080205728446:web:68da387339bfd3dca3dcef",
+    measurementId: "G-DFTN70RW10"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+ 
+</script>
+        <script src="app.js"></script>
+    </body>
+</html>
